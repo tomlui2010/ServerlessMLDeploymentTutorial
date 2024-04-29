@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "af37b5c3-1150-4109-8a3c-0d60a8f029f8",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4406268"
+	},
+	"item": [
+		{
+			"name": "imageprediction",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "image/jpeg",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Transfer-Encoding",
+						"value": "base64",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "<Replace with your image>"
+					}
+				},
+				"url": "http://127.0.0.1:3000/predict"
+			},
+			"response": []
+		}
+	]
+}
